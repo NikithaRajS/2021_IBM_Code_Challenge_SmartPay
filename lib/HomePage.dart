@@ -10,11 +10,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.white,
-          leading: IconButton(
-            icon: const Icon(Icons.photo_album_outlined),
-            onPressed: () {},
-            color: Colors.black87,
-          )),
+          leading: Image.asset('assets/icons/qr_scan.png')
+          ),
       body: SingleChildScrollView(
         child: Column(
           children: [
