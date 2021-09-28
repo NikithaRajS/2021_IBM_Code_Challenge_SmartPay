@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smart_pay/HomePage.dart';
-import 'package:smart_pay/SplashScreen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+
+      home: SecondHome(),
+
     );
   }
 }
