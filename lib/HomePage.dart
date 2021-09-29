@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:smart_pay/HomePage1.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-                height: MediaQuery.of(context).size.height * 0.46,
+                height: 350,
                 decoration: BoxDecoration(
-                    color: Colors.teal[100],
+                    color: Color(0xb3CDF0EA),
                     borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(25),
                         bottomRight: Radius.circular(25))),
@@ -185,11 +186,20 @@ class HomePage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text('View More',
+                          GestureDetector(
+                            child:Text('View More',
                               style: TextStyle(
                                 fontSize: 17,
                                 color: Colors.teal,
                               )),
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => SecondHome()),
+                                );
+                                
+                              }
+                          ),
                           SizedBox(
                             width: 10,
                           ),
@@ -202,15 +212,17 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
-                  width: 20,
-                ),
+                
                 Column(
                   children: [
                     Card(
-                      color: Colors.teal[100],
+                      color: Color(0xffCDF0EA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xff297F87), width: 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       child: Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.money),
@@ -230,9 +242,13 @@ class HomePage extends StatelessWidget {
                 Column(
                   children: [
                     Card(
-                      color: Colors.teal[100],
+                      color: Color(0xffCDF0EA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xff297F87), width: 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       child: Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.book_outlined),
@@ -254,15 +270,17 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
-                  width: 20,
-                ),
+              
                 Column(
                   children: [
                     Card(
-                      color: Colors.teal[100],
+                      color: Color(0xffCDF0EA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xff297F87), width: 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       child: Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.person_outline),
@@ -282,9 +300,13 @@ class HomePage extends StatelessWidget {
                 Column(
                   children: [
                     Card(
-                      color: Colors.teal[100],
+                      color: Color(0xffCDF0EA),
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xff297F87), width: 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       child: Padding(
-                        padding: const EdgeInsets.all(15.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: IconButton(
                           onPressed: () {},
                           icon: Icon(Icons.settings),
@@ -296,8 +318,11 @@ class HomePage extends StatelessWidget {
                       height: 5,
                     ),
                     Text('Settings'),
+                    
                   ],
+                  
                 ),
+                
               ],
             ),
           ],
@@ -318,8 +343,8 @@ class SmallBlueButton extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(top: 10),
           alignment: Alignment.center,
-          height: MediaQuery.of(context).size.height * 0.07,
-          width: MediaQuery.of(context).size.width * 0.25,
+          height: 50,
+          width: 100,
           decoration: BoxDecoration(
               color: Colors.teal, borderRadius: BorderRadius.circular(25.0)),
           child: Padding(
