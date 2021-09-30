@@ -2,6 +2,14 @@
 
 A new Flutter application.
 
+## Problem statement
+
+## Personas of the system
+
+## Architecture
+
+## List of contributors
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
