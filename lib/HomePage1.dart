@@ -336,8 +336,8 @@ class SmallBlueButton extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(top: 10),
           alignment: Alignment.center,
-          height: MediaQuery.of(context).size.height * 0.07,
-          width: MediaQuery.of(context).size.width * 0.25,
+          height: 50,
+          width: 100,
           decoration: BoxDecoration(
               color: Colors.teal, borderRadius: BorderRadius.circular(25.0)),
           child: Padding(
