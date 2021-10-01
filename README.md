@@ -31,6 +31,11 @@ The major users of our flutter application and their benefits are as follows:-
 
 ## Architecture
 
+<img src="assets/splashscreen.png" width="250"> <img src="assets/loginpage.png" width="250">
+<img src="assets/homepage.png" width="250">
+<img src="assets/dues.png" width="250">
+<img src="assets/transactions.png" width="250">
+
 
 
 ## List of contributors
