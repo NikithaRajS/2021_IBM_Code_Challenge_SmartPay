@@ -31,6 +31,8 @@ The major users of our flutter application and their benefits are as follows:-
 
 ## Architecture
 
+
+
 ## List of contributors
 
 - Dona Mathew,RIT Kottayam
